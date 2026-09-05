@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Suscripción al Boletín</title>
+    <link rel="stylesheet" href="css/styles.css?v=12">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Workspace / Inteligencia Artificial Agéntica Forense</span>
+                    <h1>Suscripción al Boletín</h1>
+                    <p>Recibí novedades y análisis de jurisprudencia aplicada a práctica forense con foco en productividad legal.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Qué recibís</h2>
+                        <ul>
+                            <li>Resumen de novedades normativas.</li>
+                            <li>Alertas sobre criterios jurisprudenciales relevantes.</li>
+                            <li>Buenas prácticas para flujos legales asistidos por IA.</li>
+                        </ul>
+                    </section>
+
+                    <section class="agenda-form-card">
+                        <form id="boletin-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre y apellido</span>
+                                    <input name="nombre" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input name="email" type="email" required />
+                                </label>
+                                <label>
+                                    <span>Estudio / empresa</span>
+                                    <input name="empresa" type="text" />
+                                </label>
+                                <label>
+                                    <span>Rol</span>
+                                    <input name="rol" type="text" placeholder="Socio, asociado, paralegal, etc." />
+                                </label>
+                                <label>
+                                    <span>Frecuencia preferida</span>
+                                    <select name="frecuencia">
+                                        <option>Quincenal</option>
+                                        <option>Mensual</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Tema de mayor interés</span>
+                                    <select name="tema_interes">
+                                        <option>Penal</option>
+                                        <option>Familia</option>
+                                        <option>Laboral</option>
+                                        <option>Corporativo</option>
+                                        <option>Automatización documental</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="consent-row">
+                                <input name="consentimiento" type="checkbox" required />
+                                <span>Acepto que mis datos sean almacenados para gestionar la suscripción al boletín.</span>
+                            </label>
+
+                            <button type="submit" class="btn-primary agenda-submit">Suscribirme</button>
+                            <p id="boletin-status" class="agenda-status" aria-live="polite"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/boletin.js?v=1"></script>
+</body>
+</html>

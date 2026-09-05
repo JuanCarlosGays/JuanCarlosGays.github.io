@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo — Agenda Demo Privada</title>
+    <link rel="stylesheet" href="css/styles.css?v=11">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Workspace / Inteligencia Artificial Agéntica Forense</span>
+                    <h1>Agendar Demo Privada</h1>
+                    <p>Completá el formulario y coordinamos una presentación privada. La solicitud se guarda en una base SQLite local para seguimiento interno.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Qué sigue</h2>
+                        <ul>
+                            <li>Revisamos tu solicitud.</li>
+                            <li>Coordinamos fecha y hora.</li>
+                            <li>Te confirmamos la demo privada.</li>
+                        </ul>
+                    </section>
+
+                    <section class="agenda-form-card">
+                        <form id="agenda-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre y apellido</span>
+                                    <input name="nombre" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Estudio / empresa</span>
+                                    <input name="empresa" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input name="email" type="email" required />
+                                </label>
+                                <label>
+                                    <span>Teléfono</span>
+                                    <input name="telefono" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Cargo / rol</span>
+                                    <input name="cargo" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Interés principal</span>
+                                    <select name="interes">
+                                        <option>Demo general</option>
+                                        <option>Casos penales</option>
+                                        <option>Casos familiares</option>
+                                        <option>Casos laborales</option>
+                                        <option>Implementación corporativa</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Cliente actual</span>
+                                    <select name="es_cliente">
+                                        <option value="no" selected>No</option>
+                                        <option value="si">Sí</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Tipo de suscripción</span>
+                                    <select name="subscription_type">
+                                        <option>Firma Boutique Local (On-Premise)</option>
+                                        <option>Estudio Asociado (Cloud Gestionado)</option>
+                                        <option>Firma Corporativa (Cloud Aislado)</option>
+                                        <option>Plan Élite / Enterprise</option>
+                                        <option>Plan Crédito Base</option>
+                                        <option>Plan Crédito Premium</option>
+                                        <option>Aequo Ciudadano (Express)</option>
+                                        <option>Suscripción Litigio Activo</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Usuario de cuenta (opcional)</span>
+                                    <input name="username" type="text" />
+                                </label>
+                                <label>
+                                    <span>Contraseña de cuenta (opcional)</span>
+                                    <input name="password" type="password" />
+                                </label>
+                            </div>
+                            <p class="agenda-help">La contraseña se guarda con hash seguro en SQLite.</p>
+
+                            <label class="full-width">
+                                <span>Contanos brevemente qué querés resolver</span>
+                                <textarea name="mensaje" rows="6"></textarea>
+                            </label>
+
+                            <label class="consent-row">
+                                <input name="consentimiento" type="checkbox" required />
+                                <span>Acepto que mis datos sean almacenados para coordinar la demo.</span>
+                            </label>
+
+                            <button type="submit" class="btn-primary agenda-submit">Enviar solicitud</button>
+                            <p id="agenda-status" class="agenda-status" aria-live="polite"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/agenda.js?v=4"></script>
+</body>
+</html>

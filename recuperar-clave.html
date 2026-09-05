@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Recuperar clave</title>
+    <link rel="stylesheet" href="css/styles.css?v=32">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="signin.html?v=2" class="agenda-back-link">← Volver a Signin</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Cuenta Aequo</span>
+                    <h1>Recuperar clave</h1>
+                    <p>Ingresá el token recibido por email y definí una nueva clave.</p>
+                </div>
+                <section class="agenda-form-card">
+                    <form id="reset-form" class="agenda-form">
+                        <label class="full-width">
+                            <span>Token de recuperación</span>
+                            <input id="reset-token" name="token" type="text" required />
+                        </label>
+                        <div class="agenda-grid">
+                            <label>
+                                <span>Nueva clave</span>
+                                <input id="new-password" name="new_password" type="password" required minlength="8" />
+                            </label>
+                            <label>
+                                <span>Confirmar nueva clave</span>
+                                <input id="confirm-password" type="password" required minlength="8" />
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-primary agenda-submit">Actualizar clave</button>
+                        <p id="reset-status" class="agenda-status" aria-live="polite"></p>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/recuperar-clave.js?v=1"></script>
+</body>
+</html>

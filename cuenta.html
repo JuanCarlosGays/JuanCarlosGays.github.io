@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Mi cuenta</title>
+    <link rel="stylesheet" href="css/styles.css?v=31">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html?v=31" class="agenda-back-link">← Volver a Inicio</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Cuenta Aequo</span>
+                    <h1>Mi cuenta</h1>
+                    <p id="account-welcome">Cargando sesión...</p>
+                </div>
+                <section class="agenda-form-card">
+                    <div class="agenda-form">
+                        <p><strong>Usuario:</strong> <span id="account-username">-</span></p>
+                        <p><strong>Email confirmado:</strong> <span id="account-email">-</span></p>
+                        <p><strong>Modo contratado:</strong> <span id="account-mode" class="account-mode-badge">-</span></p>
+                        <p><strong>Estado de acceso:</strong> <span id="account-status">-</span></p>
+                        <p><strong>Vigencia:</strong> <span id="account-expiry">-</span></p>
+                        <p><strong>Casos activos:</strong> <span id="account-cases">-</span></p>
+                        <p><strong>Créditos disponibles:</strong> <span id="account-credits">-</span></p>
+                        <p id="account-description" class="agenda-help"></p>
+                        <ul id="account-access-details" class="agenda-help"></ul>
+                        <button id="logout-btn" type="button" class="btn-secondary agenda-submit">Cerrar sesión</button>
+                    </div>
+                </section>
+                <section id="account-streamlit-card" class="agenda-form-card account-workspace-card">
+                    <div class="agenda-form">
+                        <div>
+                            <span class="hero-kicker">Workspace Aequo IA</span>
+                            <h2 id="account-streamlit-title">Cargando workspace...</h2>
+                        </div>
+                        <p id="account-streamlit-summary" class="agenda-help"></p>
+                        <ul id="account-streamlit-features" class="agenda-help"></ul>
+                        <div class="account-workspace-actions">
+                            <a
+                                id="account-streamlit-link"
+                                class="btn-secondary agenda-submit"
+                                href="http://127.0.0.1:8501/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Abrir workspace
+                            </a>
+                        </div>
+                        <p class="agenda-help">
+                            Si el panel no carga, iniciá Streamlit localmente en http://127.0.0.1:8501 y recargá esta página.
+                        </p>
+                        <iframe
+                            id="account-streamlit-frame"
+                            class="account-streamlit-frame"
+                            title="Workspace Aequo IA"
+                            src="about:blank"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/cuenta.js?v=3"></script>
+</body>
+</html>
