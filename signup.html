@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Signup</title>
+    <link rel="stylesheet" href="css/styles.css?v=31">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html?v=31" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Cuenta Aequo</span>
+                    <h1>Signup</h1>
+                    <p>Registrá tu usuario, confirmá tu email y accedé al modo contratado.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Proceso de acceso</h2>
+                        <ul>
+                            <li>Creás usuario y clave.</li>
+                            <li>Confirmás email con el enlace recibido.</li>
+                            <li>Hacés signin y entrás a tu modo de cuenta.</li>
+                        </ul>
+                    </section>
+
+                    <section class="agenda-form-card">
+                        <form id="signup-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre de usuario</span>
+                                    <input name="username" type="text" required minlength="3" />
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input name="email" type="email" required />
+                                </label>
+                                <label>
+                                    <span>Clave</span>
+                                    <input name="password" type="password" required minlength="8" />
+                                </label>
+                                <label>
+                                    <span>Confirmar clave</span>
+                                    <input name="confirm_password" type="password" required minlength="8" />
+                                </label>
+                                <label>
+                                    <span>Modo contratado</span>
+                                    <select name="subscription_type" required>
+                                        <option value="Firma Boutique Local (On-Premise)">Firma Boutique Local (On-Premise)</option>
+                                        <option value="Estudio Asociado (Cloud Gestionado)">Estudio Asociado (Cloud Gestionado)</option>
+                                        <option value="Firma Corporativa (Cloud Aislado)">Firma Corporativa (Cloud Aislado)</option>
+                                        <option value="Plan Élite / Enterprise">Plan Élite / Enterprise</option>
+                                        <option value="Plan Crédito Base">Plan Crédito Base</option>
+                                        <option value="Plan Crédito Premium">Plan Crédito Premium</option>
+                                        <option value="Aequo Ciudadano (Express)">Aequo Ciudadano (Express)</option>
+                                        <option value="Suscripción Litigio Activo">Suscripción Litigio Activo</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="consent-row">
+                                <input name="consentimiento" type="checkbox" required />
+                                <span>Acepto la validación de cuenta por email para habilitar el signin.</span>
+                            </label>
+
+                            <button type="submit" class="btn-primary agenda-submit">Crear cuenta</button>
+                            <p id="signup-status" class="agenda-status" aria-live="polite"></p>
+                            <p class="agenda-help">¿Ya tenés cuenta? <a href="signin.html?v=1">Ir a Signin</a></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/signup.js?v=1"></script>
+</body>
+</html>
