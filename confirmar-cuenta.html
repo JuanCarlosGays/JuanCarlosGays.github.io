@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Confirmar cuenta</title>
+    <link rel="stylesheet" href="css/styles.css?v=31">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="signin.html?v=1" class="agenda-back-link">← Ir a Signin</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Cuenta Aequo</span>
+                    <h1>Confirmar email</h1>
+                    <p>Pegá tu token o abrí esta página desde el enlace del correo para activar tu cuenta.</p>
+                </div>
+                <section class="agenda-form-card">
+                    <form id="confirm-form" class="agenda-form">
+                        <label class="full-width">
+                            <span>Token de confirmación</span>
+                            <input id="token" name="token" type="text" required />
+                        </label>
+                        <button type="submit" class="btn-primary agenda-submit">Confirmar cuenta</button>
+                        <p id="confirm-status" class="agenda-status" aria-live="polite"></p>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/confirmar-cuenta.js?v=1"></script>
+</body>
+</html>
