@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Solicitud de Auditoría Técnica</title>
+    <link rel="stylesheet" href="css/styles.css?v=12">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Workspace / Inteligencia Artificial Agéntica Forense</span>
+                    <h1>Solicitar Auditoría Técnica</h1>
+                    <p>Completá este formulario para coordinar una revisión técnica de despliegue, seguridad y flujos de trabajo en tu estudio.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Qué evaluamos</h2>
+                        <ul>
+                            <li>Arquitectura y despliegue local.</li>
+                            <li>Seguridad de la información y compliance.</li>
+                            <li>Optimización de tiempos operativos del equipo.</li>
+                        </ul>
+                    </section>
+
+                    <section class="agenda-form-card">
+                        <form id="auditoria-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre y apellido</span>
+                                    <input name="nombre" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Estudio / empresa</span>
+                                    <input name="empresa" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input name="email" type="email" required />
+                                </label>
+                                <label>
+                                    <span>Teléfono</span>
+                                    <input name="telefono" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Área principal</span>
+                                    <select name="area_principal">
+                                        <option>Penal</option>
+                                        <option>Familia</option>
+                                        <option>Laboral</option>
+                                        <option>Corporativo</option>
+                                        <option>Multifuero</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>Tamaño del equipo</span>
+                                    <select name="tamano_equipo">
+                                        <option>1-5 profesionales</option>
+                                        <option>6-20 profesionales</option>
+                                        <option>21-50 profesionales</option>
+                                        <option>Más de 50 profesionales</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="full-width">
+                                <span>Objetivo de la auditoría</span>
+                                <textarea name="objetivo" rows="6" placeholder="Contanos qué querés evaluar o mejorar."></textarea>
+                            </label>
+
+                            <label class="consent-row">
+                                <input name="consentimiento" type="checkbox" required />
+                                <span>Acepto que mis datos sean almacenados para coordinar la auditoría técnica.</span>
+                            </label>
+
+                            <button type="submit" class="btn-primary agenda-submit">Enviar solicitud</button>
+                            <p id="auditoria-status" class="agenda-status" aria-live="polite"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/auditoria.js?v=1"></script>
+</body>
+</html>

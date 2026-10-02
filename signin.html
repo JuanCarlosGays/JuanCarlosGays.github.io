@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Signin</title>
+    <link rel="stylesheet" href="css/styles.css?v=32">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html?v=34" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Cuenta Aequo</span>
+                    <h1>Signin</h1>
+                    <p>Ingresá con tu usuario y clave para entrar al modo contratado.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Importante</h2>
+                        <ul>
+                            <li>Debes haber confirmado el email.</li>
+                            <li>Si no recibiste correo, podés reenviarlo.</li>
+                            <li>El acceso se habilita según tu suscripción.</li>
+                        </ul>
+                    </section>
+
+                    <section class="agenda-form-card">
+                        <form id="signin-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre de usuario</span>
+                                    <input name="username" type="text" required />
+                                </label>
+                                <label>
+                                    <span>Clave</span>
+                                    <input name="password" type="password" required />
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary agenda-submit">Ingresar</button>
+                            <p id="signin-status" class="agenda-status" aria-live="polite"></p>
+
+                            <div class="agenda-grid">
+                                <label class="full-width">
+                                    <span>Reenviar confirmación (usuario o email)</span>
+                                    <input id="resend-identifier" type="text" placeholder="usuario o email" />
+                                </label>
+                            </div>
+                            <button id="resend-btn" type="button" class="btn-secondary agenda-submit">Reenviar email de confirmación</button>
+                            <div class="agenda-grid">
+                                <label class="full-width">
+                                    <span>Olvidé mi clave (email asociado)</span>
+                                    <input id="forgot-email" type="email" placeholder="tu-email@dominio.com" />
+                                </label>
+                            </div>
+                            <button id="forgot-btn" type="button" class="btn-secondary agenda-submit">Enviar recuperación de clave</button>
+                            <p class="agenda-help"><a href="recuperar-clave.html?v=1">Ya tengo token de recuperación</a></p>
+                            <p class="agenda-help">¿Aún no tenés cuenta? <a href="signup.html?v=1">Crear cuenta</a></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/signin.js?v=2"></script>
+</body>
+</html>
