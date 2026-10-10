@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Estado del pago</title>
+    <link rel="stylesheet" href="css/styles.css?v=33">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Paso 3 de 3 · Confirmación</span>
+                    <h1>Verificando el estado</h1>
+                    <p>El regreso desde el proveedor no confirma el pago ni la autorización de la prueba. Aequo consulta el estado verificado en el servidor.</p>
+                </div>
+                <section class="agenda-form-card">
+                    <p id="checkout-status" class="agenda-status" aria-live="polite">Esperando confirmación del proveedor…</p>
+                    <button id="checkout-check" type="button" class="btn-secondary agenda-submit">Consultar de nuevo</button>
+                    <p><a href="signin.html">Ir a iniciar sesión</a></p>
+                    <p><a href="pago.html">Volver al plan y pago</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/checkout-return.js?v=3"></script>
+</body>
+</html>

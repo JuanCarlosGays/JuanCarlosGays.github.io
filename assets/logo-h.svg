@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44" height="48" viewBox="0 0 44 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aequo hexagon">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#67d8ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .hex-rotator {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: hex-y-spin 3.8s ease-in-out infinite;
+    }
+
+    @keyframes hex-y-spin {
+      0%,
+      100% {
+        transform: perspective(160px) rotateY(0deg);
+      }
+      50% {
+        transform: perspective(160px) rotateY(180deg);
+      }
+    }
+  </style>
+
+  <g class="icon-group" transform="translate(4,2)">
+    <g class="hex-rotator">
+      <path id="hex" d="M18 2 L34 11 L34 29 L18 38 L2 29 L2 11 Z" fill="none" stroke="url(#g1)" stroke-width="2.2" stroke-linejoin="round"/>
+
+      <g transform="translate(9,10)">
+        <line x1="9" y1="2" x2="9" y2="17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="4" y1="17" x2="14" y2="17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M3 9 C5.2 6.8, 7.3 6.8, 9 9" stroke="#ffffff" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M15 9 C12.8 6.8, 10.7 6.8, 9 9" stroke="#ffffff" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <circle id="node" cx="25" cy="28" r="2" fill="#8b5cf6" opacity="0.95"/>
+      <path d="M25 28 L31 32" stroke="#67d8ff" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+    </g>
+  </g>
+</svg>
