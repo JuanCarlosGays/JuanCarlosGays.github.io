@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Crear cuenta</title>
+    <link rel="stylesheet" href="css/styles.css?v=34">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="index.html" class="agenda-back-link">← Volver</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Paso 1 de 3 · Registro</span>
+                    <h1>Crear cuenta</h1>
+                    <p>Registrate con email o Google y elegí el plan. Los planes mensuales tienen 15 días gratis al autorizar el medio de pago; los pagos únicos se cobran al contratar. Luego confirmá tu email.</p>
+                    <p>Cancelá la renovación desde Mi cuenta antes de terminar la prueba para evitar el primer cobro mensual.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Tu registro, primero</h2>
+                        <ol>
+                            <li>Guardá tu registro por email o con tu cuenta Google.</li>
+                            <li>Elegí un plan y autorizá Tarjeta o Mercado Pago.</li>
+                            <li>Confirmá el email para habilitar el acceso.</li>
+                        </ol>
+                        <p id="resume-registration" class="agenda-help" hidden><a href="pago.html">Continuar con mi registro guardado</a></p>
+                    </section>
+                    <section class="agenda-form-card">
+                        <form id="signup-form" class="agenda-form">
+                            <div class="agenda-grid">
+                                <label>
+                                    <span>Nombre de usuario</span>
+                                    <input name="username" type="text" required minlength="3" autocomplete="username">
+                                </label>
+                                <label>
+                                    <span>Email</span>
+                                    <input name="email" type="email" required autocomplete="email">
+                                </label>
+                                <label>
+                                    <span>Clave (mínimo 8 caracteres)</span>
+                                    <input name="password" type="password" required minlength="8" autocomplete="new-password">
+                                </label>
+                                <label>
+                                    <span>Confirmar clave</span>
+                                    <input name="confirm_password" type="password" required minlength="8" autocomplete="new-password">
+                                </label>
+                            </div>
+                            <label class="consent-row">
+                                <input name="consentimiento" type="checkbox" required>
+                                <span>Acepto la confirmación por email después del pago o la autorización verificada de la prueba mensual.</span>
+                            </label>
+                            <p class="agenda-help">Antes de continuar, consultá la <a href="privacidad.html">Política de privacidad</a> y las <a href="condiciones.html">Condiciones de servicio</a>.</p>
+                            <button type="submit" class="btn-primary agenda-submit">Registrarme por email y continuar</button>
+                            <p id="signup-status" class="agenda-status" aria-live="polite"></p>
+                            <div class="google-signin-area">
+                                <p>O registrate con Google: solo marcá la casilla de confirmación por email y elegí tu cuenta. No completes los campos de arriba: el email se obtiene de Google y el nombre de usuario se genera automáticamente.</p>
+                                <div id="google-signup-button"></div>
+                                <p id="google-signup-status" class="agenda-status" aria-live="polite"></p>
+                            </div>
+                            <p class="agenda-help">¿Ya tenés cuenta? <a href="signin.html">Iniciar sesión</a></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/signup.js?v=7"></script>
+</body>
+</html>

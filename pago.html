@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aequo - Plan y pago</title>
+    <link rel="stylesheet" href="css/styles.css?v=35">
+</head>
+<body class="agenda-body">
+    <main class="agenda-page">
+        <section class="agenda-page-hero landing-section visible">
+            <div class="agenda-page-shell">
+                <a href="signup.html" class="agenda-back-link">← Volver al registro</a>
+                <div class="agenda-hero-card">
+                    <span class="hero-kicker">Paso 2 de 3 · Plan y pago</span>
+                    <h1>Elegí tu plan</h1>
+                    <p id="payment-registration" aria-live="polite">Verificando tu registro guardado...</p>
+                    <p>Planes mensuales: 15 días gratis después de autorizar el medio de pago. Luego se cobra automáticamente si no cancelás antes desde Mi cuenta. Los planes de pago único se cobran al contratar.</p>
+                </div>
+                <div class="agenda-layout">
+                    <section class="agenda-copy-card">
+                        <h2>Planes y precios</h2>
+                        <div id="payment-plan-prices" class="ecommerce-plan-list" aria-live="polite"></div>
+                        <p class="agenda-help">Enterprise requiere cotización personalizada y contrato anual.</p>
+                    </section>
+                    <section class="agenda-form-card">
+                        <form id="payment-form" class="agenda-form">
+                            <fieldset id="payment-fields" class="payment-fields" disabled>
+                                <label>
+                                    <span>Plan</span>
+                                    <select name="plan_key" id="payment-plan" required>
+                                        <option value="">Seleccioná un plan</option>
+                                    </select>
+                                </label>
+                                <p id="enterprise-quote" class="agenda-help" hidden>Enterprise no se cobra automáticamente. <a href="agenda-demo.html">Solicitar contacto comercial</a>.</p>
+                                <fieldset class="ecommerce-methods">
+                                    <legend>Medio de pago</legend>
+                                    <div class="ecommerce-method-grid">
+                                        <label class="ecommerce-method">
+                                            <input type="radio" name="payment_method" value="mercadopago_card" required disabled>
+                                            <img class="payment-logo" src="assets/payment-card.svg" alt="" width="48" height="40">
+                                            <span>Tarjeta (vía Mercado Pago)</span>
+                                            <small data-method-state="mercadopago_card">Consultando disponibilidad...</small>
+                                        </label>
+                                        <label class="ecommerce-method">
+                                            <input type="radio" name="payment_method" value="mercadopago" disabled>
+                                            <img class="payment-logo" src="assets/mercadopago.svg" alt="" width="48" height="40">
+                                            <span>Mercado Pago</span>
+                                            <small data-method-state="mercadopago">Consultando disponibilidad...</small>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <p id="payment-trial-info" class="agenda-help" aria-live="polite"></p>
+                                <p class="agenda-help">Revisá las <a href="condiciones.html">Condiciones de servicio</a> y la <a href="privacidad.html">Política de privacidad</a> antes de autorizar el pago. Los planes mensuales se renuevan automáticamente; los pagos únicos no.</p>
+                                <button type="submit" class="btn-primary agenda-submit">Continuar al pago seguro</button>
+                            </fieldset>
+                            <button id="payment-retry" type="button" class="btn-secondary agenda-submit" hidden>Continuar checkout guardado</button>
+                            <p id="payment-status" class="agenda-status" aria-live="polite"></p>
+                            <p class="agenda-help"><a href="checkout-return.html">Consultar estado de un pago iniciado</a></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/pago.js?v=2"></script>
+</body>
+</html>
