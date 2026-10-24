@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /cuenta.html
+Disallow: /pago.html
+Disallow: /checkout-return.html
+Disallow: /confirmar-cuenta.html
+Disallow: /recuperar-clave.html
+
+Sitemap: https://aequolegal.com/sitemap.xml
